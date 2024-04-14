@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="win-container">
+            <h1>X is winner</h1>
+            <button id="btn">RESTART</button>
+            <div class="winner-point">
+                <h3>Your score is <span id="playerspan">11</span></h3>
+                <h3>Bot's score is <span id="botspan">0</span></h3>
+            </div>
+        </div>
+
+        
+        <div class="game-board">
+            <svg class="right-to-left" height="400" width="500">
+                <line x1="520" y1="0" x2="50" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg>
+            <svg class="straight-y" height="350" width="800">
+                <line x1="0" y1="0" x2="0" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg>
+            <svg class="left-to-right" height="400" width="400">
+                <line x1="0" y1="100" x2="300" y2="400" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg>
+            <svg class="straight-x" height="350" width="800">
+                <line x1="1" y1="5" x2="320" y2="5" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg>
+
+            <div id="0"></div>
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+            <div id="7"></div>
+            <div id="8"></div>
+        </div>
+    </div>
+
+    
+    
+
+
+
+            <!-- <svg class="straight-2" height="350" width="800">
+                <line x1="0" y1="0" x2="0" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg>
+            <svg class="straight-3" height="350" width="800">
+                <line x1="0" y1="0" x2="0" y2="500" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg> -->
+    
+    <script src="./game.js"></script>
+</body>
+</html>

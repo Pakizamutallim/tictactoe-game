@@ -1,0 +1,147 @@
+body {
+    overflow: hidden;
+    background-color: rgb(6, 88, 88);
+}
+
+.game-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.win-container{
+    margin-bottom: 30px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    h1{
+        font-size: 50px;
+        color: #ebd5d5;
+    }
+    button{
+        padding: 10px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        border-radius: 40px;
+        font-size: 20px;
+        width: 200px;
+        transition: .3s;
+        &:hover{
+            background-color: white;
+            color: black;
+            border-radius: 40px;
+        }
+    }
+    .winner-point{
+        margin: 20px;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-between;
+        h3{
+            color: white;
+            font-size: 30px;
+        }
+        span{
+            font-size: 30px;
+            color: red;
+        }
+    }
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    /* transform: rotate(135deg);
+    left: 145px;
+    top: 0; */
+}
+
+.game-board div {
+    width: calc(100% / 3 - 2px);
+    height: calc(100% / 3 - 2px);
+    border: 1px solid #a09d9d;
+    cursor: pointer;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    /* color: #773f3f; */
+    color: white;
+}
+.game-board div:hover{
+    background-color: rgb(26, 134, 134);
+}
+
+
+.right-to-left{
+    bottom: 3%;
+    display: none;
+    left: -30%;
+    position: absolute;
+    z-index: 100;
+}
+
+.left-to-right{
+    bottom: 5%;
+    display: none;
+    left: 20%;
+    position: absolute;
+    z-index: 1000;
+}
+
+.straight-y{
+    bottom: 5%;
+    display: none;
+    left: 20%;
+    position: absolute;
+    z-index: 100;
+}
+
+
+.straight-x{
+    top: 15%;
+    display: none;
+    left: 10%;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* 
+.straight-2{
+    bottom: 5%;
+    display: none;
+    left: 50%;
+    position: absolute;
+    z-index: 100;
+}
+
+.straight-3{
+    bottom: 5%;
+    display: none;
+    left: 80%;
+    position: absolute;
+    z-index: 100;
+} */
+
+
+/* line-div{
+    display: none;
+    background-color: red;
+    width: 20px;
+    height: 100px;
+    above-line{
+        display: block;
+    }
+} */
+
